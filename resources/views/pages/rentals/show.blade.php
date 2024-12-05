@@ -290,7 +290,7 @@ $(form).find("[name='" + key + "']").after(`<div class="invalid-feedback">${valu
 
 <link rel="stylesheet" href="{{ asset('assets/js/flatpickr/flatpickr.min.css') }}">
 <script src="{{ asset('assets/js/flatpickr/flatpickr.min.js') }}"></script>
-<script src="{{ asset('assets/js/flatpickr/l10n/ar.js') }}"></script>
+<script src="{{ asset('assets/js/flatpickr/ar.js') }}"></script>
 <script>
     flatpickr("#datetime", {
         "locale": "ar",
