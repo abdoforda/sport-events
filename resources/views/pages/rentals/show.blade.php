@@ -288,9 +288,9 @@ $(form).find("[name='" + key + "']").after(`<div class="invalid-feedback">${valu
         });
     </script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-<script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
-<script src="https://npmcdn.com/flatpickr/dist/l10n/ar.js"></script>
+<link rel="stylesheet" href="{{ asset('assets/js/flatpickr/flatpickr.min.css') }}">
+<script src="{{ asset('assets/js/flatpickr/flatpickr.min.js') }}"></script>
+<script src="{{ asset('assets/js/flatpickr/l10n/ar.js') }}"></script>
 <script>
     flatpickr("#datetime", {
         "locale": "ar",
