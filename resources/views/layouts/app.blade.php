@@ -332,10 +332,10 @@
                     <div class="col-md-12">
                         <div class="copyright">
                             <p class="desktop">
-                                <a href="/">dxbppsport</a>           حقوق الملكية © 2024 
+                                <a href="/">dxbppsport</a>           حقوق الملكية © 2025 
                             </p>
                             <p class="mobile">
-                                <a href="/">dxbppsport</a>     حقوق الملكية © 2024 
+                                <a href="/">dxbppsport</a>     حقوق الملكية © 2025 
                             </p>
                         </div>
                     </div>
