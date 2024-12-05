@@ -16,7 +16,7 @@ class SiteController extends Controller
     // news
 
     public function news()
-    {   $news = News::orderBy('id', 'desc')->paginate(1);
+    {   $news = News::orderBy('id', 'desc')->paginate(9);
         return view('pages.news.index', compact('news'));
     }
 
