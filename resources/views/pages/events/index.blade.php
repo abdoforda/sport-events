@@ -1,4 +1,10 @@
 @extends('layouts.app')
+@php
+    $title = "الفعاليات";
+    if(isset($archive)){
+        $title = "أرشيف الفعاليات";
+    }
+@endphp
 
 @section('content')
 <section class="kick-breadcromb-area rtl">
@@ -7,12 +13,12 @@
             <div class="col-md-12">
                 <div class="breadcromb-box">
                     <h2>
-                        الفعاليات
+                        {{ $title }}
                     </h2>
                     <ul>
                         <li><a href="/"><i class="fa fa-home"></i> الرئيسية</a></li>
                         <li>/</li>
-                        <li>الفعاليات</li>
+                        <li>{{ $title }}</li>
                     </ul>
                 </div>
             </div>

@@ -59,8 +59,15 @@
                             <div class="title-line-two"></div>
                         </div>
                         <p>
-                            تتميز الفعاليات الرياضية في الإمارات بتنوعها وجذبها لاهتمام المجتمع، من الفورمولا 1 في أبوظبي إلى بطولات التنس في دبي. تشمل الفعاليات الرياضية ماراثونات الجري وركوب الدراجات التي تشجع على نمط حياة صحي. تنظيمها الرائع والبنية التحتية المتقدمة تجعل الإمارات وجهة مفضلة لعشاق الرياضة عالمياً.
+                            {{ setting('site.events_note') }}
                         </p>
+                        <div class="my-4">
+                            <a href="{{ route('event.index') }}" class="kick-btn hover-black" style="border-radius: 8px">
+                                <i class="fa fa-arrow-left"></i>
+                                المزيد
+                                
+                            </a>
+                        </div>
                         <div class="row">
                             @php
                                 $events = \App\Event::where('status', 1)->orderBy('id', 'desc')->take(4)->get();

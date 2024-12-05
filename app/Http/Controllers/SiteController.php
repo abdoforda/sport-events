@@ -123,6 +123,13 @@ class SiteController extends Controller
         return view('pages.events.index', compact('events'));
     }
 
+    //events_archive
+    public function events_archive(){
+        $events = Event::where('status', 0)->orderBy('id', 'desc')->paginate(6);
+        $archive = 1;
+        return view('pages.events.index', compact('events', 'archive'));
+    }
+
     //event_show
     public function event_show($id){
         $event = Event::where('id', $id)->firstOrFail();

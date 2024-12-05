@@ -36,6 +36,7 @@ Route::get('page/{id}', [SiteController::class, 'pageShow'])->name('pages.show')
 
 //events
 Route::get('events', [SiteController::class, 'events'])->name('event.index');
+Route::get('events/archive', [SiteController::class, 'events_archive'])->name('event.archive');
 Route::get('events/{id}', [SiteController::class, 'event_show'])->name('event.show');
 
 

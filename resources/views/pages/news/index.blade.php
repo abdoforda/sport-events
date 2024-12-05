@@ -27,7 +27,7 @@
             <div class="col-md-6">
                 <div class="single-latest-post">
                     <a href="{{ route('news.show', $new->slug) }}">
-                        <img src="http://127.0.0.1:8000/assets/img/post-2.jpg" alt="post image"></a>
+                        <img src="{{  Voyager::image($new->image) }}" alt="post image"></a>
                     <div class="single-post-text rtl">
                         <h3><a href="{{ route('news.show', $new->slug) }}" class="color-primary"> {{ $new->title }} </a></h3>
                         <p class="post-date mt-05">

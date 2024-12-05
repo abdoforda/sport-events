@@ -117,6 +117,10 @@
                                     <ul id="navigation_menu_2">
                                         <li>
                                             <a href="/events">فعاليات رياضية</a>
+                                            <ul>
+                                                <li><a href="{{ route('event.index') }}">الفعاليات</a></li>
+                                                <li><a href="{{ route('event.archive') }}">الأرشيف</a></li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="##############">تأجير الملاعب</a>
