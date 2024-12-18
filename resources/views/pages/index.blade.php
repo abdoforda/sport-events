@@ -12,7 +12,7 @@
             @foreach ($banners as $index => $banner)
             <div class="kick-main-slide slide-item-{{ $index+1 }}" style="    background-color: #eee;
     background-position: center center;
-    background-size: cover; background: url({{ Voyager::image($banner->image) }}) repeat scroll 0 0 !important;">
+    background-size: cover; background: url({{ Voyager::image($banner->image) }}) no-repeat scroll 0 0 !important;">
                 <div class="kick-main-caption">
                     <div class="kick-caption-cell">
                         <div class="container">
