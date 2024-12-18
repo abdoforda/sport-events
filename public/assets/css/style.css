@@ -486,12 +486,7 @@ li {
 08 - MAIN SLIDER CSS
 ==================================================*/
 
-.slide-item-1 {
-    background: rgba(0, 0, 0, 0.3) url("../img/slider-1.jpg") repeat scroll 0 0;
-}
-.slide-item-2 {
-    background: rgba(0, 0, 0, 0.3) url("../img/slider-2.jpg") repeat scroll 0 0;
-}
+
 .kick-main-caption{
     background: rgba(26, 26, 26, 0.49) none repeat scroll 0 0
 }
