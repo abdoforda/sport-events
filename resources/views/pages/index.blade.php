@@ -7,7 +7,7 @@
         <div class="kick-slide">
             
             @php
-                $banners = \App\slidshows::all();
+                $banners = \App\Slidshow::all();
             @endphp
             @foreach ($banners as $index => $banner)
             <div class="kick-main-slide slide-item-{{ $index+1 }}" style="    background-color: #eee;
