@@ -31,7 +31,7 @@ Route::get('register', [SiteController::class, 'register'])->name('register');
 Route::post('register', [SiteController::class, 'register'])->name('register');
 
 Route::get('gallery', [SiteController::class, 'gallery'])->name('gallery.index');
-Route::get('gallery/{slug}', [SiteController::class, 'showgallery'])->name('gallery.show');
+Route::get('gallery/{id}', [SiteController::class, 'showgallery'])->name('gallery.show');
 Route::get('page/{id}', [SiteController::class, 'pageShow'])->name('pages.show');
 
 //events
