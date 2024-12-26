@@ -183,7 +183,7 @@
 @endphp
 @foreach ($imgs as $img)
     @if ($x2 <= $x1)
-    <a href="{{ route('gallery.show', $allImage->slug) }}">
+    <a href="{{ route('gallery.show', $allImage->album->slug) }}">
         <img src="{{ Voyager::image($img) }}" alt="Gallery" />
     </a>
     
