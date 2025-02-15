@@ -20,6 +20,15 @@ Route::get('/', function () {
     return view('pages.index');
 })->name('home');
 
+
+Route::get('/clear', function () {
+    Artisan::call('config:cache');
+    Artisan::call('cache:clear');
+    Artisan::call('view:clear');
+    return "done";
+});
+
+
 Route::get('news', [SiteController::class, 'news'])->name('news.index');
 Route::get('news/{slug}', [SiteController::class, 'showNews'])->name('news.show');
 
