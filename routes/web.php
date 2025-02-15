@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SiteController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
 
@@ -30,6 +31,7 @@ Route::get('/clear', function () {
 
 
 Route::get('news', [SiteController::class, 'news'])->name('news.index');
+Route::get('cat/{id}', [SiteController::class, 'cat'])->name('cat.index');
 Route::get('news/{slug}', [SiteController::class, 'showNews'])->name('news.show');
 
 Route::get('login', [SiteController::class, 'login'])->name('login');

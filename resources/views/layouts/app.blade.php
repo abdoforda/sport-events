@@ -167,8 +167,8 @@
                                         <li>
                                             <a href="#">منطقة النصائح</a>
                                             <ul>
-                                                <li><a href="{{ Route('pages.show', 3) }}">نصائح رياضية</a></li>
-                                                <li><a href="{{ Route('pages.show', 4) }}">نصائح ⁠غذائية</a></li>
+                                                <li><a href="{{ Route('cat.index', 2) }}">نصائح رياضية</a></li>
+                                                <li><a href="{{ Route('cat.index', 3) }}">نصائح ⁠غذائية</a></li>
                                             </ul>
                                         </li>
                                         <li>

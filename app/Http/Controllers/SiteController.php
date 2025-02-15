@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Cat;
 use App\ImageAlbum;
 use App\News;
 use App\Page;
@@ -16,8 +17,17 @@ class SiteController extends Controller
     // news
 
     public function news()
-    {   $news = News::orderBy('id', 'desc')->paginate(9);
-        return view('pages.news.index', compact('news'));
+    {   
+        $cat = Cat::where('id', 1)->firstOrFail();
+        $news = $cat->news()->orderBy('id', 'desc')->paginate(9);
+        return view('pages.news.index', compact('news', 'cat'));
+    }
+
+    public function cat($id)
+    {
+        $cat = Cat::where('id', $id)->firstOrFail();
+        $news = $cat->news()->orderBy('id', 'desc')->paginate(9);
+        return view('pages.news.index', compact('news', 'cat'));
     }
 
     //showNews

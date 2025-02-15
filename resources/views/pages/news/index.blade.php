@@ -6,11 +6,13 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="breadcromb-box">
-                    <h2>آخر الأخبار</h2>
+                    <h2>
+                        {{ $cat->name }}
+                    </h2>
                     <ul>
                         <li><a href="/"><i class="fa fa-home"></i> الرئيسية</a></li>
                         <li>/</li>
-                        <li>الأخبار</li>
+                        <li>{{ $cat->name }}</li>
                     </ul>
                 </div>
             </div>
