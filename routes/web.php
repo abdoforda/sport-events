@@ -80,3 +80,27 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+
+Route::get('/admin/contests2', function(){
+    return view('contests.index');
+});
+
+Route::get('/admin/contests/{id}/form', function($id){
+    return view('contests.form', ['contest_id' => $id]); // ضع هنا معرف المسابقة الديناميكي
+});
+
+Route::post('/admin/contests/{id}/form', [App\Http\Controllers\ContestFormController::class, 'store'])->name('contests.form.store');
+
+
+Route::get('/contests', function(){
+    return view('contests.user_index');
+});
+
+Route::get('/contests/{id}', function($id){
+    return view('contests.user_form', ['contest_id' => $id]); // ضع هنا معرف المسابقة الديناميكي
+})->name('contests.form_user');
+
+Route::post('/contests/{id}', [App\Http\Controllers\ContestFormController::class, 'storeUser'])->name('contests.form.store_user');
+
+///admin/contests/{{ $contest->id }}/users
+Route::get('/admin/contests/{id}/users', [App\Http\Controllers\ContestFormController::class, 'users'])->name('contests.users.index');
